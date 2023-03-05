@@ -113,11 +113,17 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+    /* showing two different way to make flex items stack in responsive screen sizes */
+
+    /* by setting the flex direction to column */
     .header .container {
         flex-direction: column;
         padding-top: 20px;
         text-align: center;
     }
+
+    /* by turning off flexbox and setting the display to block */
 
     .boxes .container {
         display: block;
