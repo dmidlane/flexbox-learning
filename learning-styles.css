@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    height: 300px;
+    display: flex;
+    background-color: slategray;
+    /* justify-content always works with the main axis */
+    justify-content: space-between;
+    /* align-items always works with the cross axis */
+    align-items: center;
+}
+
+.item {
+    height: 100px;
+    flex-basis: 300px;
+    background: #254de4;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    /* this is aligning the item text in our case, as sub items */
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .item:nth-of-type(1){
+        flex-shrink: 1;
+    }
+
+    .item:nth-of-type(2){
+        flex-shrink: 2;
+    }
+
+    .item:nth-of-type(3){
+        flex-shrink: 1;
+    }
+    
