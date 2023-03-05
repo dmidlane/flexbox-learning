@@ -1,3 +1,3 @@
-#Flexbox Landing Page
+# Flexbox Landing Page
 
 ![image](/landing-page.png)
